@@ -1,0 +1,16 @@
+<div class="header">
+  <div class="hamburger">
+    <button (click)="setState()" ><mat-icon aria-hidden="false" aria-label="home">menu</mat-icon></button>
+    <nav [@showing]="isShow">
+      <ul >
+        <li><a href="">Home</a></li>
+        <li><a href="">List</a></li>
+        <li><a href="">Popular</a></li>
+      </ul>
+    </nav>
+  </div>
+  <button class="profile">
+
+    <mat-icon class="user__image" routerLink="/user">person</mat-icon>
+    </button>
+</div>

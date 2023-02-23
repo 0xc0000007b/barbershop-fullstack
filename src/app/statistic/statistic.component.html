@@ -1,0 +1,18 @@
+<app-header class="header"/>
+<div class="main">
+    <app-statistic-counter [percent]="100" class="counter" select="h2"
+                           select="h3" select="b">
+        <h2>Количество счастливых псетитеей просто зашкаливает</h2>
+        <h3>Всего у нас подстриглось примерно <b>30000</b> человек,
+            из которых счастоивыми оказались: </h3>
+    </app-statistic-counter>
+    <app-statistic-counter [percent]="90" class="counter"  select="h2"
+                           select="h3" select="b">
+        <h2>Наши мастера делают все возможное, чтобы вы оставили хороший отзыв и посещали нас снова</h2>
+        <h3>Наш <b>Арт-директор</b> работает не покладая рук, чтобы вы вернулись к нам снова</h3>
+        <h3>Людей, которые были рады, что их подстриг на <b>Арт-директор</b> (от всего количества поетителей):</h3>
+    </app-statistic-counter>
+
+    <app-barchart   class="bar"/>
+</div>
+<app-footer class="footer"/>

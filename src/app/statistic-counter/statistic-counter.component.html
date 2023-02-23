@@ -1,0 +1,13 @@
+<div class="statistic__box">
+    <div class="statistic__headings">
+        <h2 class="head__help"><ng-content></ng-content></h2>
+        <h3 class="success"><ng-content></ng-content></h3>
+
+    </div>
+    <div class="count"><circle-progress [percent]="percent"
+                          [maxPercent]="100"
+                          [radius]="50"
+                          [innerStrokeColor]="'#16a085'"
+                          [outerStrokeColor]="'#7dcd7e'"
+                          /></div>
+</div>
