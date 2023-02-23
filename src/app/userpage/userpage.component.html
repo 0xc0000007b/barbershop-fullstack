@@ -1,0 +1,33 @@
+<app-header/>
+<div class="main">
+    <div class="heading">
+
+        <h1 class="entry__heading">Записаться на сеанс</h1>
+    </div>
+    <div class="main__form" >
+        <div class="user__headset">
+
+             <input placeholder="Ваше имя"/>
+             <input class="phone" placeholder="Ваш  телефон"/>
+
+        </div>
+        <div class="selection">
+
+            <select (click)="setState()" name="" id="selector">
+
+                    <option [@showing]="isShow">Выберите услугу</option>
+                    <option [@showing]="isShow">Стрижка головы</option>
+                    <option [@showing]="isShow">Стрижка бороды</option>
+                    <option [@showing]="isShow">Массаж головы бороды</option>
+
+
+            </select>
+
+        </div>
+        <div class="btns">
+
+            <button>Записаться</button>
+        </div>
+    </div>
+</div>
+<app-footer/>
